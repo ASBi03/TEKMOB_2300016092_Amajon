@@ -29,7 +29,7 @@ class CategoryItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Icon(icon, color: Colors.blue),
+        Icon(icon, color: Colors.deepOrange),
         const SizedBox(height: 8.0),
         Text(label),
       ],
@@ -57,7 +57,7 @@ class ECommerceScreen extends StatelessWidget {
               margin: const EdgeInsets.all(16.0),
               padding: const EdgeInsets.all(16.0),
               decoration: BoxDecoration(
-                color: Colors.blue.shade100,
+                color: Colors.yellow,
                 borderRadius: BorderRadius.circular(8.0),
               ),
               child: const Text(
@@ -66,7 +66,7 @@ class ECommerceScreen extends StatelessWidget {
                 style: TextStyle(
                   fontSize: 20.0,
                   fontWeight: FontWeight.bold,
-                  color: Colors.blue,
+                  color: Colors.orange,
                 ),
               ),
             ),
@@ -87,7 +87,7 @@ class ECommerceScreen extends StatelessWidget {
                 borderRadius: BorderRadius.circular(8.0),
                 boxShadow: [
                   BoxShadow(
-                    color: Colors.blue.shade100,
+                    color: Colors.yellow.shade200,
                     spreadRadius: 2,
                     blurRadius: 5, 
                     offset: Offset(0, 3),
@@ -104,6 +104,26 @@ class ECommerceScreen extends StatelessWidget {
                       fontWeight: FontWeight.bold,
                     ),
                   ),
+                  Transform.translate(
+                    offset: Offset(0, -10),
+                    child: Row(
+                      children: const [
+                        Icon(Icons.star, color: Colors.orange, size: 15.0),
+                        Icon(Icons.star, color: Colors.orange, size: 15.0),
+                        Icon(Icons.star, color: Colors.orange, size: 15.0),
+                        Icon(Icons.star, color: Colors.orange, size: 15.0),
+                        Icon(Icons.star_half, color: Colors.orange, size: 15.0),
+                        SizedBox(width: 4.0),
+                        Text(
+                          '4.5',
+                          style: TextStyle(
+                          fontSize: 14.0,
+                          color: Colors.orange,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
                   const SizedBox(height: 8.0),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -111,7 +131,7 @@ class ECommerceScreen extends StatelessWidget {
                       const Text(
                         'Rp 750.000',
                         style: TextStyle(
-                          color: Colors.blue,
+                          color: Colors.orange,
                           fontSize: 16.0,
                         ),
                       ),
@@ -129,37 +149,18 @@ class ECommerceScreen extends StatelessWidget {
                           ),
                         ],
                       ),
-                        Transform.translate(
-                          offset: Offset(0, -10),
-                          child: Row(
-                            children: const [
-                              Icon(Icons.star, color: Colors.blue, size: 20.0),
-                              Icon(Icons.star, color: Colors.blue, size: 20.0),
-                              Icon(Icons.star, color: Colors.blue, size: 20.0),
-                              Icon(Icons.star, color: Colors.blue, size: 20.0),
-                              Icon(Icons.star_half, color: Colors.blue, size: 20.0),
-                              SizedBox(width: 4.0),
-                              Text(
-                                '4.5',
-                                style: TextStyle(
-                                  fontSize: 16.0,
-                                  color: Colors.blue,
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),                      
+                                              
                       Container(
                         padding: const EdgeInsets.symmetric(
                             horizontal: 12.0,
                             vertical: 6.0,
                             ),
                         decoration: BoxDecoration(
-                          color: Colors.blue,
+                          color: Colors.yellow.shade100,
                           borderRadius: BorderRadius.circular(4.0),
                           boxShadow: [
                             BoxShadow(
-                              color: Colors.grey.withOpacity(0.5),
+                              color: Colors.grey.shade200,
                               spreadRadius: 2,
                               blurRadius: 3,
                               offset: const Offset(0, 3),
@@ -170,7 +171,7 @@ class ECommerceScreen extends StatelessWidget {
                           child: Text(
                             'Beli',
                             style: TextStyle(
-                              color: Colors.white,
+                              color: Colors.deepOrange,
                               fontWeight: FontWeight.bold,
                             ),
                           ),
@@ -198,7 +199,7 @@ class ECommerceScreen extends StatelessWidget {
                 borderRadius: BorderRadius.circular(8.0),
                 boxShadow: [
                   BoxShadow(
-                    color: Colors.green.shade200,
+                    color: Colors.yellow.shade200,
                     spreadRadius: 2,
                     blurRadius: 5,
                     offset: const Offset(0, 3),
@@ -215,6 +216,26 @@ class ECommerceScreen extends StatelessWidget {
                       fontWeight: FontWeight.bold,
                     ),
                   ),
+                  Transform.translate(
+                    offset: Offset(0, -10),
+                    child: Row(
+                      children: const [
+                        Icon(Icons.star, color: Colors.orange, size: 15.0),
+                        Icon(Icons.star, color: Colors.orange, size: 15.0),
+                        Icon(Icons.star, color: Colors.orange, size: 15.0),
+                        Icon(Icons.star_half, color: Colors.orange, size: 15.0),
+                        Icon(Icons.star_border, color: Colors.orange, size: 15.0),
+                        SizedBox(width: 4.0),
+                        Text(
+                          '3.5',
+                          style: TextStyle(
+                          fontSize: 14.0,
+                          color: Colors.orange,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
                   const SizedBox(height: 8.0),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -222,7 +243,7 @@ class ECommerceScreen extends StatelessWidget {
                       const Text(
                         'Rp 350.000',
                         style: TextStyle(
-                          color: Colors.blue,
+                          color: Colors.orange,
                           fontSize: 16.0,
                         ),
                       ),
@@ -240,37 +261,18 @@ class ECommerceScreen extends StatelessWidget {
                           ),
                         ],
                       ),
-                      Transform.translate(
-                          offset: Offset(0, -10),
-                          child: Row(
-                            children: const [
-                              Icon(Icons.star, color: Colors.blue, size: 20.0),
-                              Icon(Icons.star, color: Colors.blue, size: 20.0),
-                              Icon(Icons.star, color: Colors.blue, size: 20.0),
-                              Icon(Icons.star_half, color: Colors.blue, size: 20.0),
-                              Icon(Icons.star_border, color: Colors.blue, size: 20.0),
-                              SizedBox(width: 4.0),
-                              Text(
-                                '3.5',
-                                style: TextStyle(
-                                  fontSize: 16.0,
-                                  color: Colors.blue,
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
+                      
                       Container(
                         padding: const EdgeInsets.symmetric(
                             horizontal: 12.0,
                             vertical: 6.0,
                           ),
                         decoration: BoxDecoration(
-                          color: Colors.blue,
+                          color: Colors.yellow.shade100,
                           borderRadius: BorderRadius.circular(4.0),
                           boxShadow: [
                             BoxShadow(
-                              color: Colors.grey.withOpacity(0.5),
+                              color: Colors.grey.shade200,
                               spreadRadius: 2,
                               blurRadius: 3,
                               offset: const Offset(0, 3),
@@ -281,7 +283,7 @@ class ECommerceScreen extends StatelessWidget {
                           child: Text(
                             'Beli',
                             style: TextStyle(
-                              color: Colors.white,
+                              color: Colors.deepOrange,
                               fontWeight: FontWeight.bold,
                             ),
                           ),
@@ -336,7 +338,7 @@ class ECommerceScreen extends StatelessWidget {
               padding: const EdgeInsets.symmetric(vertical: 12.0, horizontal: 16.0),
               decoration: BoxDecoration(
                 color: Colors.white,
-                border: Border.all(color: Colors.blue),
+                border: Border.all(color: Colors.orange),
                 borderRadius: BorderRadius.circular(8.0),
               ),
               child: Row(
@@ -347,7 +349,7 @@ class ECommerceScreen extends StatelessWidget {
                   Text(
                     'GRATIS ONGKIR SELURUH INDONESIA',
                     style: TextStyle(
-                      fontSize: 16,
+                      fontSize: 14,
                       fontWeight: FontWeight.bold,
                       color: Colors.red,
                     ),
